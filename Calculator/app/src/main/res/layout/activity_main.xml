@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overskrift"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="@string/inputtxt"
+        android:id="@+id/tal1"
+        android:inputType="number"
+        android:autofillHints="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="@string/inputtxt"
+        android:id="@+id/tal2"
+        android:inputType="number"
+        android:autofillHints="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="25dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="25dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="25dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="25dp"
+            android:onClick="onClickBtn4"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Result"
+        android:textSize="25dp"
+        android:focusable="false"
+        android:id="@+id/tal3"/>
+
+</LinearLayout>

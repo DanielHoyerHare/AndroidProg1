@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    tools:context=".ChooseColorActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type's color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:id="@+id/txtTypeColor"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        android:id="@+id/color"/>
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="1,3,5"
+        android:shrinkColumns="0,2,4">
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+            <Spinner
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerRed" />
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+            <Spinner
+                android:layout_column="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerGreen" />
+            <TextView
+                android:layout_column="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+            <Spinner
+                android:layout_column="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerBlue" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="30sp"
+        android:id="@+id/btnColorSave"/>
+
+</LinearLayout>

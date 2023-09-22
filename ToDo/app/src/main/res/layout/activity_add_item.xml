@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItem"
+    android:stretchColumns="0,4"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="20dp">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_column="0"
+            android:layout_span="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="To do liste"
+            android:layout_marginBottom="20dp"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Title: "
+            android:textSize="30sp"/>
+        <EditText
+            android:layout_column="2"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type text"
+            android:textSize="30sp"
+            android:id="@+id/txtAddName"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+            <DatePicker
+                android:layout_column="2"
+                android:layout_span="1"
+                android:layout_width="wrap_content"
+                android:id="@+id/datePicker"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_column="1"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="25sp"
+            android:id="@+id/btnBack"/>
+        <Button
+            android:layout_column="3"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="25sp"
+            android:id="@+id/btnAdd"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">@color/gray</item>
+</style>

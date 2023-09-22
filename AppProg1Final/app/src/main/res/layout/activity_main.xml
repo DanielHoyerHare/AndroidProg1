@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose ones name and color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose name"
+        android:textSize="30sp"
+        android:id="@+id/btnName"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here comes the name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:id="@+id/txtName"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose color"
+        android:textSize="30sp"
+        android:id="@+id/btnColor"/>
+
+</LinearLayout>

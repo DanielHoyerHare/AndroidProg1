@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:stretchColumns="0,2,3,4">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_column="0"
+                android:layout_span="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indtast og beregn"
+                android:textSize="30dp"
+                android:layout_marginBottom="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indtast tal:"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_column="2"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/input1"
+                android:hint="0"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indtast tal:"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_column="2"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/input2"
+                android:hint="0"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_column="0"
+                android:layout_span="5"
+                android:id="@+id/rGroup"
+                android:layout_gravity="center_horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/rBtnAdd"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/rBtnMin"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:id="@+id/rBtnMul"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:id="@+id/rBtnDiv"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:gravity="center_horizontal"
+                android:layout_column="0"
+                android:layout_span="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="beregn"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btn"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result:"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_column="2"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/result"
+                android:focusable="false" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

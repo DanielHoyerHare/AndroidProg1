@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="overskrift">Indtast to tal og tryk på knap</string>
+    <string name="inputtxt">Indtast tal</string>
+</resources>
